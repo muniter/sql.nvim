@@ -1,81 +1,7 @@
 
 <a name="unreleased"></a>
 
-## [unreleased](https://github.com/tami5/sqlite.lua/compare/v1.2.0...unreleased)
-
-### :bug: Bug Fixes
-
-- <a href="https://github.com/tami5/sqlite.lua/commit/74b3844949738999aa76b5f709673629f0888703"><tt>74b3844</tt></a> false is treat as nil when inserting (closes <a href="https://github.com/tami5/sqlite.lua/issues/123"> #123</a>)
-
-<dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/f9326aa0443592968a24970fc55c5ee609a5dba8"><tt>f9326aa</tt></a> sqlite:tbl(...) doesn't pass schema</summary>
-
-This what happens with dealing with function that can take self or
-other.
-
-Refs: https://github.com/AckslD/nvim-neoclip.lua/pull/20
-
-</details></dd></dl>
-
-
-### :construction_worker: CI Updates
-
-- <a href="https://github.com/tami5/sqlite.lua/commit/99e4058704fab2109add2febf36784945cc40ecc"><tt>99e4058</tt></a> fix changelog links
-
-
-
-<a name="v1.2.0"></a>
-
-## [v1.2.0](https://github.com/tami5/sqlite.lua/compare/v1.1.0...v1.2.0)
-
-### :bug: Bug Fixes
-
-<dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/edf642e2f2088a7a4bafa5a3850fd2b338566c2c"><tt>edf642e</tt></a> fix Emmylua completion</summary>
-
-This used to work, but maybe with new versions of sumneko_lua. It
-stopped working.
-
-</details></dd></dl>
-
-
-### :sparkles: Features
-
-- <a href="https://github.com/tami5/sqlite.lua/commit/3d89dc149b10ab72c0ba78d89b92ebeb83e921b9"><tt>3d89dc1</tt></a> add Bookmark Manager Example
-
-
-
-<a name="v1.1.0"></a>
-
-## [v1.1.0](https://github.com/tami5/sqlite.lua/compare/v1.0.0...v1.1.0)
-
-### :bug: Bug Fixes
-
-<dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/43f5e0c80a93f588d788fbb3e3a3d4daaa43b85f"><tt>43f5e0c</tt></a> luarocks auto-generate script (closes <a href="https://github.com/tami5/sqlite.lua/issues/115"> #115</a>)</summary>
-
-Having "/" in the start of path breaks luarocks installation.
-
-</details></dd></dl>
-
-
-### :sparkles: Features
-
-- <a href="https://github.com/tami5/sqlite.lua/commit/5b395267bb1938c165099991a59497a9cc4ca8a1"><tt>5b39526</tt></a> activate release workflow
-
-
-### :zap: Performance Improvements
-
-- <a href="https://github.com/tami5/sqlite.lua/commit/ca8233f8cb09b9adc7ea11f81ab903154ce07e86"><tt>ca8233f</tt></a> improve handling of sqlite builtin functions (closes <a href="https://github.com/tami5/sqlite.lua/issues/114"> #114</a>)
-
-<dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/f9a10606806142a521e971437b4a2e41d688c85b"><tt>f9a1060</tt></a> improve require time (<a href="https://github.com/tami5/sqlite.lua/pull/11">#111</a>)</summary>
-
-decrease require time (cost on startup) from `0.791636 ms` to `4.140682` (423% faster)
-
-</details></dd></dl>
-
-
-
-<a name="v1.0.0"></a>
-
-## v1.0.0
+## unreleased
 
 ### :art: Structure/Formating
 
@@ -108,6 +34,30 @@ changes access to sugar functions and store it in lib. It was weird typing out `
 
 ### :bug: Bug Fixes
 
+- <a href="https://github.com/tami5/sqlite.lua/commit/74b3844949738999aa76b5f709673629f0888703"><tt>74b3844</tt></a> false is treat as nil when inserting (closes <a href="https://github.com/tami5/sqlite.lua/issues/123"> #123</a>)
+
+<dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/f9326aa0443592968a24970fc55c5ee609a5dba8"><tt>f9326aa</tt></a> sqlite:tbl(...) doesn't pass schema</summary>
+
+This what happens with dealing with function that can take self or
+other.
+
+Refs: https://github.com/AckslD/nvim-neoclip.lua/pull/20
+
+</details></dd></dl>
+
+<dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/edf642e2f2088a7a4bafa5a3850fd2b338566c2c"><tt>edf642e</tt></a> fix Emmylua completion</summary>
+
+This used to work, but maybe with new versions of sumneko_lua. It
+stopped working.
+
+</details></dd></dl>
+
+<dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/43f5e0c80a93f588d788fbb3e3a3d4daaa43b85f"><tt>43f5e0c</tt></a> luarocks auto-generate script (closes <a href="https://github.com/tami5/sqlite.lua/issues/115"> #115</a>)</summary>
+
+Having "/" in the start of path breaks luarocks installation.
+
+</details></dd></dl>
+
 - <a href="https://github.com/tami5/sqlite.lua/commit/1778aa857367c17c1468cc85a64fcda542b5c252"><tt>1778aa8</tt></a> (parser) only check when type is table (closes <a href="https://github.com/tami5/sqlite.lua/issues/103"> #103</a>)
 
 <dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/1c88610b902c122560fdd28683b101c755853a8e"><tt>1c88610</tt></a> extended tables referencing mutable db object + other fixes (<a href="https://github.com/tami5/sqlite.lua/pull/00">#100</a>) (closes <a href="https://github.com/tami5/sqlite.lua/issues/101"> #101</a>, <a href="https://github.com/tami5/sqlite.lua/issues/99"> #99</a>)</summary>
@@ -134,6 +84,8 @@ make map, sort, each, support executing sqlite queries regardless of connection 
 
 ### :construction_worker: CI Updates
 
+- <a href="https://github.com/tami5/sqlite.lua/commit/99e4058704fab2109add2febf36784945cc40ecc"><tt>99e4058</tt></a> fix changelog links
+
 - <a href="https://github.com/tami5/sqlite.lua/commit/9173664fecfc8e13d9deffe54f1eba640f4d2481"><tt>9173664</tt></a> changelog run once every two days take 2
 
 - <a href="https://github.com/tami5/sqlite.lua/commit/3447223239ce2e0ab322db756ee1aa0374e20551"><tt>3447223</tt></a> update changelog template (<a href="https://github.com/tami5/sqlite.lua/pull/90">#90</a>) (closes <a href="https://github.com/tami5/sqlite.lua/issues/82"> #82</a>)
@@ -151,6 +103,10 @@ No breaking changes here :)
 
 
 ### :sparkles: Features
+
+- <a href="https://github.com/tami5/sqlite.lua/commit/3d89dc149b10ab72c0ba78d89b92ebeb83e921b9"><tt>3d89dc1</tt></a> add Bookmark Manager Example
+
+- <a href="https://github.com/tami5/sqlite.lua/commit/5b395267bb1938c165099991a59497a9cc4ca8a1"><tt>5b39526</tt></a> activate release workflow
 
 <dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/25748dd0f8947533fe4cff14d8900ae30f774241"><tt>25748dd</tt></a> auto alter table key definition  (<a href="https://github.com/tami5/sqlite.lua/pull/03">#103</a>)</summary>
 
@@ -226,6 +182,14 @@ Here goes nothing 🤞. Please CI don't fail me.
 
 
 ### :zap: Performance Improvements
+
+- <a href="https://github.com/tami5/sqlite.lua/commit/ca8233f8cb09b9adc7ea11f81ab903154ce07e86"><tt>ca8233f</tt></a> improve handling of sqlite builtin functions (closes <a href="https://github.com/tami5/sqlite.lua/issues/114"> #114</a>)
+
+<dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/f9a10606806142a521e971437b4a2e41d688c85b"><tt>f9a1060</tt></a> improve require time (<a href="https://github.com/tami5/sqlite.lua/pull/11">#111</a>)</summary>
+
+decrease require time (cost on startup) from `0.791636 ms` to `4.140682` (423% faster)
+
+</details></dd></dl>
 
 <dl><dd><details><summary><a href="https://github.com/tami5/sqlite.lua/commit/2424ea0f9f9287247a2785069438457fc5b7f5fe"><tt>2424ea0</tt></a> (sql) avoid executing sql.schema on crud</summary>
 
